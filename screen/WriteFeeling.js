@@ -9,7 +9,12 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import styled from "styled-components/native";
 
-const Container = styled.View``;
+const Container = styled.View`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex:1;
+`;
 
 const Header = styled.TouchableOpacity`
   padding: 10px;
@@ -25,7 +30,12 @@ const ExtraContainer = styled.View`
 export default function WriteFeeling({ navigation }) {
 
   return (
-    <Text>hi</Text>
+    <Container>
+      <TouchableOpacity onPress={ () => { navigation.toggleDrawer() } } >
+        <Text>toggle</Text>
+      </TouchableOpacity>
+    </Container>
+
   );
 
 }

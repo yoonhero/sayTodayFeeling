@@ -83,6 +83,7 @@ export default function Feed({ navigation }) {
   useEffect(() => {
     navigation.setOptions({
       title: "Yoonhero's diary",
+
     })
 
   }, [])
@@ -112,6 +113,7 @@ export default function Feed({ navigation }) {
 
   return (
     <ScreenLayout loading={ !fontsLoaded }>
+
       <FlatList
         style={ { width: "100%" } }
         showsVerticalScrollIndicator={ false }
@@ -120,6 +122,7 @@ export default function Feed({ navigation }) {
         renderItem={ renderPhoto }
 
       />
+
     </ScreenLayout>
   );
 
